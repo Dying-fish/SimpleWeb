@@ -1,0 +1,27 @@
+{
+  "groups": [
+    {
+      "name": "jwt.config",
+      "type": "com.example.config.JwtConfig",
+      "sourceType": "com.example.config.JwtConfig"
+    }
+  ],
+  "properties": [
+    {
+      "name": "jwt.config.issuer",
+      "type": "java.lang.String",
+      "sourceType": "com.example.config.JwtConfig"
+    },
+    {
+      "name": "jwt.config.secret",
+      "type": "java.lang.String",
+      "sourceType": "com.example.config.JwtConfig"
+    },
+    {
+      "name": "jwt.config.time-limit",
+      "type": "java.lang.Long",
+      "sourceType": "com.example.config.JwtConfig"
+    }
+  ],
+  "hints": []
+}

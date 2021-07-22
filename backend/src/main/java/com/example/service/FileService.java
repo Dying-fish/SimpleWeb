@@ -42,7 +42,7 @@ public class FileService {
         HashMap hashMap = new HashMap();
         String fileName = multipartFile.getOriginalFilename();
         // 解析到文件后缀，判断是否合法
-        int index = fileName.lastIndexOf(".");
+        int index = fileName.lastIndexOf('.');
         String suffix = null;
         if (index < 0 || (suffix = fileName.substring(index + 1)).isEmpty() || !allowSuffix.contains(suffix)) {
             hashMap.put("code", -2);

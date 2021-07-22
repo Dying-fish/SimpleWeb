@@ -44,14 +44,6 @@ public class Authority implements GrantedAuthority {
         this.accessLevel = accessLevel;
     }
 
-    public boolean equals(Object obj) {
-        if (this == obj) {
-            return true;
-        } else {
-            return obj instanceof Authority ? this.authority.equals(((Authority)obj).authority) : false;
-        }
-    }
-
     public void setAuthority(String authority) {
         this.authority = authority;
     }

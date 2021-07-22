@@ -18,7 +18,7 @@ import java.util.UUID;
 
 @Component
 public class JwtUtils {
-    final private static HashMap<String, Object> header = new HashMap(){{this.put("type", "token"); this.put("alg", "HS512");}};
+    final private static HashMap<String, Object> header = new HashMap();
     private static String issuer;
     private static String secret;
     private static long timeLimit;
@@ -37,6 +37,8 @@ public class JwtUtils {
         issuer = jwtConfig.getIssuer();
         secret = jwtConfig.getSecret();
         timeLimit = jwtConfig.getTimeLimit();
+        header.put("type", "token");
+        header.put("alg", "HS512");
     }
 
     //根据用户生成令牌
